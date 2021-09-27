@@ -1,0 +1,27 @@
+### Get example.com
+GET https://example.com/
+
+### Get Json Placeholder
+GET https://jsonplaceholder.typicode.com/guide/
+
+
+### POST Request erstellen
+POST https://jsonplaceholder.typicode.com/
+
+
+### Put Request erstellen
+PUT https://jsonplaceholder.typicode.com/
+
+
+### Patch Request erstellen
+PATCH  https://jsonplaceholder.typicode.com/
+
+
+### Delete Request erstellen
+DELETE https://jsonplaceholder.typicode.com/
+
+
+ 
+
+### Get Lakritzel.com   
+GET www.lakritzel.com
