@@ -25,3 +25,22 @@ DELETE https://jsonplaceholder.typicode.com/
 
 ### Get Lakritzel.com   
 GET www.lakritzel.com
+
+
+###get localhost 3000
+GET http://localhost:3000/
+
+###post localhost 3000
+POST http://localhost:3000/api/cards
+content-type: application/javascript
+
+###put localhost 3000
+PUT http://localhost:3000/api/cards
+
+
+###Patch localhost 3000
+PATCH http://localhost:3000/api/cards
+
+
+###Delete localhost 3000
+DELETE http://localhost:3000/api/cards

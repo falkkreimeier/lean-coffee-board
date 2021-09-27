@@ -1,13 +1,29 @@
-const http = require('http')
+const express = require('express')
+const app = express()
+const port = 3000
 
-const port = process.env.PORT || 3000
+app.use(express.jason())
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200
-  res.setHeader('Content-Type', 'text/html; charset=utf-8')
-  res.end('<h1>YEAH, mein erster eigener Server. WTF</h1>')
+app.get('/api/cards', (req, res) => {
+  res.send('This was a get request')
 })
 
-server.listen(port, () => {
-  console.log(`Server running at port ${port}`)
+app.post('/api/cards', (req, res) => {
+  res.send('This was a post request')
+})
+
+app.put('/api/cards', (req, res) => {
+  res.send('This was a put request')
+})
+
+app.delete('/api/cards', (req, res) => {
+  res.send('This was a delete request')
+})
+
+app.patch('/api/cards', (req, res) => {
+  res.send('This was a patch request')
+})
+
+app.listen(port, () => {
+  console.log(`Server listening at localhost:${port}`)
 })
