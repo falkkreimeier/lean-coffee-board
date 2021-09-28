@@ -1,42 +1,28 @@
-### Get example.com
-GET https://example.com/
 
-### Get Json Placeholder
-GET https://jsonplaceholder.typicode.com/guide/
+###get localhost 3000 cards
+GET http://localhost:3000/api/cards 
 
-
-### POST Request erstellen
-POST https://jsonplaceholder.typicode.com/
+###get localhost 3000 id
+GET http://localhost:3000/api/cards/2
 
 
-### Put Request erstellen
-PUT https://jsonplaceholder.typicode.com/
-
-
-### Patch Request erstellen
-PATCH  https://jsonplaceholder.typicode.com/
-
-
-### Delete Request erstellen
-DELETE https://jsonplaceholder.typicode.com/
-
-
- 
-
-### Get Lakritzel.com   
-GET www.lakritzel.com
-
-
-###get localhost 3000
-GET http://localhost:3000/
 
 ###post localhost 3000
 POST http://localhost:3000/api/cards
-content-type: application/javascript
+Content-Type: application/json
+
+{
+    "text": "What is Node.js?",
+    "author": "Max Mustermann"
+}
 
 ###put localhost 3000
-PUT http://localhost:3000/api/cards
+PUT http://localhost:3000/api/cards/1234abc
+Content-Type: application/json
 
+{
+    "text": "Max Mustermann"
+}
 
 ###Patch localhost 3000
 PATCH http://localhost:3000/api/cards
