@@ -46,7 +46,7 @@ router.get('/:id', (request, response) => {
 router.post('/', (request, response) => {
   const { text, author } = request.body // { text: "What is node?", author: "Max M." }
 
-  if (text === '' || author === '') {
+  if (text === '' && author === '') {
     const error = { message: 'Information missing.' }
     return response.status(400).json(error) // Bad Request
   }
@@ -62,6 +62,11 @@ router.put('/:id', (request, response) => {
   // PUT request handler implementieren
   const { id } = request.params
   const { text, author } = request.body
+
+  if (text === '' || author === '') {
+    const error = { message: 'Information missing.' }
+    return response.status(400).json(error) // Bad Request
+  }
 
   const card = cards.find(card => card.id === id)
 
