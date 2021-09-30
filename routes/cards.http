@@ -1,0 +1,35 @@
+### GET 
+GET http://localhost:3000/api/cards
+
+### GET id
+GET http://localhost:3000/api/cards/61543cf58ab7e867c50123b3
+
+
+### POST
+POST http://localhost:3000/api/cards
+Content-Type: application/json
+
+{
+    "text": "Was geht ab?",
+    "author": "Max Mustermann"
+}
+
+### PUT
+PUT http://localhost:3000/api/cards/1234abc
+Content-Type: application/json
+
+{
+    "text": "This is a post request",
+    "author": "John Doe"
+}
+
+### PATCH
+PATCH http://localhost:3000/api/cards/61543cf58ab7e867c50123b3
+Content-Type: application/json
+
+{
+    "author": "max"
+}
+
+### DELETE
+DELETE  http://localhost:3000/api/cards/1234abc
